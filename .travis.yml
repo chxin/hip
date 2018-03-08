@@ -1,6 +1,7 @@
 language: android
 sudo: required
-os: osx
+os: 
+  - osx
 before_install:
   - openssl aes-256-cbc -k "$keyEncryption" -in android/app/hiprock.jks.enc  -d -a -out
   android/app/hiprock.jks
